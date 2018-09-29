@@ -7,8 +7,11 @@
    $free -le  2000 : free变量输出值是否小于2000
    
    sync : 强制将缓存数据写入磁盘
+   
    echo 1 > /proc/sys/vm/drop_caches      # 释放网页缓存
+   
    echo 2 > /proc/sys/vm/drop_caches      # 释放目录项和索引
+   
    echo 3 > /proc/sys/vm/drop_caches      # 释放网页缓存，目录和索引
 
 创建定时任务
