@@ -16,11 +16,12 @@
 
 2. 创建定时任务
 
-  第一步：写cron脚本文件,命名为cache.cron。
+   第一步：写cron脚本文件,命名为cache.cron。
   
-  */2 * * * /root/shell/cache.sh  表示，每隔两小时执行一次命令（写脚本时不要写相对目录）
+   */2 * * * /root/shell/cache.sh  表示，每隔两小时执行一次命令（写脚本时不要写相对目录）
   
-  第二步：添加定时任务。执行命令 “crontab cache.cron” 
+   第二步：添加定时任务。执行命令 “crontab cache.cron” 
   
-  第三步："crontab -l" 查看定时任务是否成功或者检测/var/spool/cron下是否生成对应cron脚本
-  注意：这操作是直接替换该用户下的crontab，而不是新增，编辑使用命令crontab -e
+   第三步："crontab -l" 查看定时任务是否成功或者检测/var/spool/cron下是否生成对应cron脚本
+   
+   注意：这操作是直接替换该用户下的crontab，而不是新增，编辑使用命令crontab -e
