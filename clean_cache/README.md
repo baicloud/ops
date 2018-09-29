@@ -1,4 +1,4 @@
-将cache.sh文件复制到/root/shell/目录下，并添加可执行权限
+1. 将cache.sh文件复制到/root/shell/目录下，并添加可执行权限
 
    命令解释：
    
@@ -14,7 +14,7 @@
    
    echo 3 > /proc/sys/vm/drop_caches      # 释放网页缓存，目录和索引
 
-创建定时任务
+2. 创建定时任务
 
   第一步：写cron脚本文件,命名为cache.cron。
   
