@@ -14,7 +14,7 @@ curl -XDELETE "IP:9200/*-${LAST_DATA}"
 
 3、创建定时任务
 
-执行" crontab -e "，添加定时任务
+执行" crontab -e "，添加定时任务(每天1点执行命令)
 
 `0 1 * * * /u01/cron/es-clear.sh`
 
